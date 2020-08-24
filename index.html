@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Test Your Knowledge!</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+
+    <div class="main">
+        <div id="quiz"></div>
+
+        <h2>Welcome To JavaScript!</h2>
+
+        <p id="timer"></p>
+        <button id="start">Start Quiz</button>
+            
+        <div id="question"></div>
+            
+        <div id="answers">
+            <button id="btnA" onclick="answerSelected(btnA)"><span id="optionA"></span></button>
+            <button id="btnB" onclick="answerSelected(btnB)"><span id="optionB"></span></button>
+            <button id="btnC" onclick="answerSelected(btnC)"><span id="optionC"></span></button>
+            <button id="btnD" onclick="answerSelected(btnD)"><span id="optionD"></span></button>
+        </div>
     
-    <a href="high-scores">View High Scores</a>
+        <button id="submit">Submit Quiz</button>
     
-    <button id="start">Start Quiz</button>
+        <div id="results"></div>
+        </section>
+    </main>
     
-    <div id="quiz"></div>
-    
-    <button id="submit">Submit Quiz</button>
-    
-    <div id="results"></div>
-    
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
