@@ -1,4 +1,3 @@
-// global variables here
 var startBtn = document.getElementById('start');
 var quizElement = document.getElementById('quiz');
 var questionElement = document.getElementById('question');
@@ -11,11 +10,7 @@ var optionB = document.getElementById('optionB');
 var optionC = document.getElementById('optionC');
 var optionD = document.getElementById('optionD');
 var timer = document.getElementById('timer');
-
-
-
-   
-// array for quiz questions
+  
 var quizQuestions = [
     {    
         question: "Commonly used data types DO Not include:",
@@ -73,9 +68,6 @@ var startQuiz = function() {
     optionB.innerHTML = quizQuestions[0].answerB;
     optionC.innerHTML = quizQuestions[0].answerC;
     optionD.innerHTML = quizQuestions[0].answerD; 
-
-    answerB.className = 'correct-answer';
-
 }
 
 var secondQuestion = function() {
@@ -130,7 +122,6 @@ var fifthQuestion = function() {
     optionD.innerHTML = quizQuestions[4].answerD;
 }
 
-
 var countdown = document.getElementById("timer").textContent;
 function countdown() {
     var timeLeft = 60;
@@ -148,41 +139,7 @@ function countdown() {
     }, 1000);
 }
 
-
-
-
-
-//Display questions and corresponding answers
-//Loop through questions
-//Track scores
-//Show results
-
-
-//function askQuestion() {
-  //  question.getElementById("#question").textcontent = quizQuestions[questionIndex].question;
-
-//    for (var i = i < quizQuestions[questionIndex].answers.length; i++;
-
- //var submitBtn = document.getElementById('#submit');
-//var resultsElement = document.getElementById('#results');
-
-//var questionIndex = 0   
-    
-    
-
-
-
-    // loop through quizQuestion objects
-  //  for (var i = 1; i <=4; i++) {
-   //     var answers = (quizQuestions[i].question);
-   // }
-
-
 //var showResults = function() {
 
-
-
-//showQuiz();
 startBtn.addEventListener('click', startQuiz);
 //submitBtn.addEventListener('click', showResults);
-//}
